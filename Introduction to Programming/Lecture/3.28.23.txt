@@ -1,0 +1,109 @@
+Function
+
+Once we hit the "return", the function stop!
+Example:
+function sum (num1, num2){
+    let x = num1 + num2
+    return x
+    console.log ('cake')
+}
+let sumx = sum
+console.log (sum)
+
+console.log ('cake') will not be printed because there is a return
+function before it and it stops the function
+
+Use Tuple to return more than one thing
+or return an array
+
+The below function will give undefined answer
+function sum_2_nums(num1, num2){
+    let x = num1 + num2
+    console.log(sum, 55555)
+    return x
+    console.log ('cake')
+}
+let my_account = 5
+let wife_account = 6
+console.log(sum_2_nums(2,3))
+var sum = sum_2_nums(my_account, wife_account)
+
+Create a function to say hellow to a user by name
+"Hello, pirate dude {name}!"
+Example:
+function say_hello(name){
+    return `Time to walk the plank ${name}!'
+}
+console.log (say_hello('Anna`))
+
+$ is used to put variable into a string
+
+Write a function that logs the number 1-10
+function countToTen(){
+    for (let i = 1; i <= 10; i++){
+        console.log(i)
+    }
+}
+countToTen()
+
+To write a function that logs the number to 14
+function countToNum(num){
+    for (let i = 1; i <= num; i++){
+        console.log (i)
+    }
+}
+countToNum(14)
+
+function countToNum2(num1, num2){
+    for (let i = num1; i <= num2; i++){
+        console.log(i)
+    }
+}
+countToNum2(4, 14)
+
+
+let cars = ['camaro', '911', 'Huracan']
+let Camar = {
+    name; 'Camaro',
+    make: "Chevy",
+    engine: 'V8',
+    trim: 'SS',
+    color: 'red',
+}
+console.log (Camaro.name)
+will give Camaro
+
+let player_1 = {
+    name : 'Tim",
+    power : 'Throwing Fire',
+    hobbies : ['shopping', 'flesh wounds', 'chasing white bunnies'],
+    age : 952,
+    health : 100,
+    isAlive : true,
+    attack : function (enemy){
+        enemy.health -= 5
+        console.log(enemy.health)
+    }
+}
+let player_2 = {
+    name : 'Kit',
+    power : 'Water',
+    hobbies : ['shopping', 'flesh wounds', 'chasing white bunnies'],
+    age : 19,
+    health : 100,
+    isAlive : true,
+    attack : function (enemy){
+        enemy.health -= 53
+        console.log(enemy.health)
+    }
+}
+
+player_1.attack(player_2)
+console.log ('Player 2 has ${player_2.health} health!`)
+player_2.attack(player_1)
+console.log ('Tim has ${player_1.health} health!`)
+
+LinkedIn Skill Assessments!!!
+CodeWars!!!
+HackerRank!!!
+freecodecamp!!!
